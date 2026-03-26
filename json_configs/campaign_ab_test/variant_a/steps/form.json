@@ -5,7 +5,13 @@
       "props": {
         "title": "Premium Registration Form",
         "subtitle": "Exclusive early-bird access",
-        "ctaText": ""
+        "ctaText": "Continue",
+        "onCtaClick": [
+          {
+            "type": "navigation",
+            "payload": { "to": "confirmation", "type": "step" }
+          }
+        ]
       }
     },
     {

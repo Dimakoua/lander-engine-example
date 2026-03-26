@@ -5,7 +5,13 @@
       "props": {
         "title": "Free Sign Up",
         "subtitle": "No payment needed",
-        "ctaText": ""
+        "ctaText": "Continue",
+        "onCtaClick": [
+          {
+            "type": "navigation",
+            "payload": { "to": "confirmation", "type": "step" }
+          }
+        ]
       }
     },
     {

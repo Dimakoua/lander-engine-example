@@ -5,7 +5,13 @@
       "props": {
         "title": "Quick & Easy Sign Up",
         "subtitle": "No credit card needed",
-        "ctaText": ""
+        "ctaText": "Continue",
+        "onCtaClick": [
+          {
+            "type": "navigation",
+            "payload": { "to": "confirmation", "type": "step" }
+          }
+        ]
       }
     },
     {

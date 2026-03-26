@@ -5,7 +5,13 @@
       "props": {
         "title": "Tell Us About You",
         "subtitle": "Help us understand your needs better",
-        "ctaText": ""
+        "ctaText": "Continue",
+        "onCtaClick": [
+          {
+            "type": "navigation",
+            "payload": { "to": "confirmation", "type": "step" }
+          }
+        ]
       }
     },
     {
