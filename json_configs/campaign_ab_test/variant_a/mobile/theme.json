@@ -1,0 +1,22 @@
+{
+  "colors": {
+    "primary": "#3b82f6",
+    "secondary": "#1e3a8a",
+    "background": "#ffffff",
+    "text": "#0f172a",
+    "lightBg": "#eff6ff"
+  },
+  "spacing": {
+    "xs": "0.25rem",
+    "sm": "0.5rem",
+    "md": "0.75rem",
+    "lg": "1rem",
+    "xl": "1.25rem"
+  },
+  "tokens": {
+    "buttonRadius": "6px",
+    "cardRadius": "10px",
+    "containerPadding": "0.875rem",
+    "fontSize": "14px"
+  }
+}

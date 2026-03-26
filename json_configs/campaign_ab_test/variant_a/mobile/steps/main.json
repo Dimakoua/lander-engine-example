@@ -1,0 +1,52 @@
+{
+  "sections": [
+    {
+      "component": "Hero",
+      "props": {
+        "title": "Premium Access(mobile)",
+        "subtitle": "Tap to unlock",
+        "ctaText": "Start Free",
+        "onCtaClick": [
+          {
+            "type": "setState",
+            "payload": { "key": "variantTracker", "value": "variant_a_mobile_cta" }
+          },
+          {
+            "type": "navigation",
+            "payload": { "to": "form", "type": "step" }
+          }
+        ]
+      }
+    },
+    {
+      "component": "Features",
+      "props": {
+        "features": [
+          {
+            "icon": "✨",
+            "title": "Premium",
+            "description": "30 days free"
+          },
+          {
+            "icon": "🏆",
+            "title": "Results",
+            "description": "95% satisfied"
+          },
+          {
+            "icon": "🔒",
+            "title": "Secure",
+            "description": "Protected"
+          }
+        ]
+      }
+    }
+  ],
+  "seo": {
+    "title": "Premium - Variant A Mobile | A/B Test",
+    "description": "Premium access on mobile"
+  },
+  "state": {
+    "variant": "variant_a",
+    "deviceType": "mobile"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "sections": [
+    {
+      "component": "Hero",
+      "props": {
+        "title": "Free Sign Up",
+        "subtitle": "No payment needed",
+        "ctaText": ""
+      }
+    },
+    {
+      "component": "UserDataForm",
+      "props": {}
+    },
+    {
+      "component": "StaticAlert",
+      "props": {
+        "type": "info",
+        "title": "Free Forever",
+        "message": "Start with free plan. Upgrade anytime."
+      }
+    }
+  ],
+  "seo": {
+    "title": "Free Registration - Mobile",
+    "description": "Sign up free on mobile"
+  }
+}

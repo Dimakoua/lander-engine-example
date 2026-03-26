@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "component": "Hero",
+      "props": {
+        "title": "Welcome! 🎉",
+        "subtitle": "Premium ready",
+        "ctaText": "Access Now",
+        "onCtaClick": [
+          {
+            "type": "navigation",
+            "payload": { "to": "main", "type": "step" }
+          }
+        ]
+      }
+    }
+  ],
+  "seo": {
+    "title": "Premium Welcome - Mobile",
+    "description": "Welcome to premium"
+  }
+}

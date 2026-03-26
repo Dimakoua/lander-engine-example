@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "component": "Hero",
+      "props": {
+        "title": "You're Set! ✓",
+        "subtitle": "Account created",
+        "ctaText": "Start Exploring",
+        "onCtaClick": [
+          {
+            "type": "navigation",
+            "payload": { "to": "main", "type": "step" }
+          }
+        ]
+      }
+    }
+  ],
+  "seo": {
+    "title": "Account Created - Mobile",
+    "description": "Free account ready"
+  }
+}

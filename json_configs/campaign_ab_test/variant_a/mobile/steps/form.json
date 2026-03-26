@@ -1,0 +1,28 @@
+{
+  "sections": [
+    {
+      "component": "Hero",
+      "props": {
+        "title": "Premium Register",
+        "subtitle": "Get 30 days free",
+        "ctaText": ""
+      }
+    },
+    {
+      "component": "UserDataForm",
+      "props": {}
+    },
+    {
+      "component": "StaticAlert",
+      "props": {
+        "type": "success",
+        "title": "Premium Included",
+        "message": "30 days of premium features free"
+      }
+    }
+  ],
+  "seo": {
+    "title": "Premium Registration - Mobile",
+    "description": "Get premium features free"
+  }
+}
