@@ -1,0 +1,70 @@
+{
+  "sections": [
+    {
+      "component": "Hero",
+      "props": {
+        "title": "Unlock Your Potential Today",
+        "subtitle": "Join thousands of successful professionals using our platform",
+        "ctaText": "Start My Journey",
+        "onCtaClick": [
+          {
+            "type": "setState",
+            "payload": { "key": "variantTracker", "value": "variant_a_cta_clicked" }
+          },
+          {
+            "type": "navigation",
+            "payload": { "to": "form", "type": "step" }
+          }
+        ]
+      }
+    },
+    {
+      "component": "Features",
+      "props": {
+        "features": [
+          {
+            "icon": "✨",
+            "title": "Premium Features",
+            "description": "Access to exclusive tools and insights"
+          },
+          {
+            "icon": "🏆",
+            "title": "Proven Results",
+            "description": "95% of users see results in the first week"
+          },
+          {
+            "icon": "🔒",
+            "title": "Enterprise Security",
+            "description": "Your data is protected with military-grade encryption"
+          }
+        ]
+      }
+    },
+    {
+      "component": "Testimonials",
+      "props": {
+        "testimonials": [
+          {
+            "quote": "This platform completely transformed how I work. Highly recommended!",
+            "author": "Emma Thompson",
+            "role": "CEO, TechCorp"
+          },
+          {
+            "quote": "The best investment I've made for my business this year.",
+            "author": "James Chen",
+            "role": "Founder, StartupHub"
+          }
+        ]
+      }
+    }
+  ],
+  "seo": {
+    "title": "Variant A - Premium Experience | A/B Test Campaign",
+    "description": "Join thousands of successful professionals on our platform"
+  },
+  "state": {
+    "variant": "variant_a",
+    "campaignStep": "main",
+    "theme": "blue"
+  }
+}

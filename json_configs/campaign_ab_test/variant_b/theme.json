@@ -1,0 +1,15 @@
+{
+  "colors": {
+    "primary": "#10b981",
+    "secondary": "#065f46",
+    "background": "#ffffff",
+    "text": "#064e3b",
+    "lightBg": "#ecfdf5",
+    "border": "#a7f3d0"
+  },
+  "tokens": {
+    "buttonRadius": "4px",
+    "cardRadius": "8px",
+    "cardShadow": "0 4px 12px rgba(16, 185, 129, 0.1)"
+  }
+}

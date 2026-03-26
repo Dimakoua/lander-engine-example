@@ -1,0 +1,17 @@
+{
+  "header": {
+    "component": "StaticHeader",
+    "props": {
+      "title": "A/B Test Campaign",
+      "subtitle": "Powered by Lander Engine",
+      "align": "center"
+    }
+  },
+  "footer": {
+    "component": "StaticCard",
+    "props": {
+      "title": "Need Help?",
+      "description": "Contact our support team for more information"
+    }
+  }
+}

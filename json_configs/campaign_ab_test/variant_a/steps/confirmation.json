@@ -1,0 +1,29 @@
+{
+  "sections": [
+    {
+      "component": "Hero",
+      "props": {
+        "title": "Welcome Aboard! 🎉",
+        "subtitle": "Your premium access is ready",
+        "ctaText": "Access Your Dashboard",
+        "onCtaClick": [
+          {
+            "type": "navigation",
+            "payload": { "to": "main", "type": "step" }
+          }
+        ]
+      }
+    },
+    {
+      "component": "StaticCard",
+      "props": {
+        "title": "Your Premium Benefits Start Now",
+        "description": "Enjoy 30 days free access to all premium features, priority support, and exclusive content"
+      }
+    }
+  ],
+  "seo": {
+    "title": "Welcome to Premium - Variant A | A/B Test Campaign",
+    "description": "Your premium access is ready. Start exploring!"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "sections": [
+    {
+      "component": "Hero",
+      "props": {
+        "title": "You're All Set! ✓",
+        "subtitle": "Your free account is ready",
+        "ctaText": "Start Exploring",
+        "onCtaClick": [
+          {
+            "type": "navigation",
+            "payload": { "to": "main", "type": "step" }
+          }
+        ]
+      }
+    },
+    {
+      "component": "StaticCard",
+      "props": {
+        "title": "Free Account Benefits",
+        "description": "Access core features for free. No payment method required. Upgrade later when you need more."
+      }
+    }
+  ],
+  "seo": {
+    "title": "Account Created - Variant B | A/B Test Campaign",
+    "description": "Your free account has been created. Start using it now!"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "initialStep": "main",
+  "steps": {
+    "main": { "type": "normal" },
+    "form": { "type": "normal" },
+    "confirmation": { "type": "normal" }
+  }
+}

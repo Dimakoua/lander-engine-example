@@ -1,0 +1,28 @@
+{
+  "sections": [
+    {
+      "component": "Hero",
+      "props": {
+        "title": "Premium Registration Form",
+        "subtitle": "Exclusive early-bird access",
+        "ctaText": ""
+      }
+    },
+    {
+      "component": "UserDataForm",
+      "props": {}
+    },
+    {
+      "component": "StaticAlert",
+      "props": {
+        "type": "success",
+        "title": "Premium Benefits Included",
+        "message": "Register now and get 30 days of premium features free!"
+      }
+    }
+  ],
+  "seo": {
+    "title": "Premium Registration - Variant A | A/B Test Campaign",
+    "description": "Exclusive early-bird registration with premium benefits"
+  }
+}

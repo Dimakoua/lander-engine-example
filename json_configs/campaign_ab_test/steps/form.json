@@ -1,0 +1,32 @@
+{
+  "sections": [
+    {
+      "component": "Hero",
+      "props": {
+        "title": "Tell Us About You",
+        "subtitle": "Help us understand your needs better",
+        "ctaText": ""
+      }
+    },
+    {
+      "component": "UserDataForm",
+      "props": {}
+    },
+    {
+      "component": "StaticAlert",
+      "props": {
+        "type": "info",
+        "title": "Your Privacy Matters",
+        "message": "We'll never share your information with third parties"
+      }
+    }
+  ],
+  "seo": {
+    "title": "Sign Up - A/B Test Campaign",
+    "description": "Join our community",
+    "noindex": false
+  },
+  "state": {
+    "campaignStep": "form"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "sections": [
+    {
+      "component": "Hero",
+      "props": {
+        "title": "Ready to Get Started?",
+        "subtitle": "Simple, affordable, no credit card required",
+        "ctaText": "Sign Up Free",
+        "onCtaClick": [
+          {
+            "type": "setState",
+            "payload": { "key": "variantTracker", "value": "variant_b_cta_clicked" }
+          },
+          {
+            "type": "navigation",
+            "payload": { "to": "form", "type": "step" }
+          }
+        ]
+      }
+    },
+    {
+      "component": "Features",
+      "props": {
+        "features": [
+          {
+            "icon": "💰",
+            "title": "Affordable Pricing",
+            "description": "Start free, upgrade anytime with simple pricing"
+          },
+          {
+            "icon": "⏱️",
+            "title": "5-Minute Setup",
+            "description": "Get up and running in minutes, not hours"
+          },
+          {
+            "icon": "☁️",
+            "title": "Cloud-Based",
+            "description": "Access from anywhere, on any device"
+          }
+        ]
+      }
+    }
+  ],
+  "seo": {
+    "title": "Variant B - Simple & Affordable | A/B Test Campaign",
+    "description": "Get started free with our simple, affordable solution"
+  },
+  "state": {
+    "variant": "variant_b",
+    "campaignStep": "main",
+    "theme": "green"
+  }
+}

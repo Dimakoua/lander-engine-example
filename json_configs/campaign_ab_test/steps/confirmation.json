@@ -1,0 +1,34 @@
+{
+  "sections": [
+    {
+      "component": "Hero",
+      "props": {
+        "title": "Thank You!",
+        "subtitle": "We've received your information",
+        "ctaText": "Back to Home",
+        "onCtaClick": [
+          {
+            "type": "navigation",
+            "payload": { "to": "main", "type": "step" }
+          }
+        ]
+      }
+    },
+    {
+      "component": "StaticCard",
+      "props": {
+        "title": "What's Next?",
+        "description": "Check your email for next steps and exclusive offers"
+      }
+    }
+  ],
+  "seo": {
+    "title": "Success - A/B Test Campaign",
+    "description": "Thank you for confirming",
+    "noindex": false
+  },
+  "state": {
+    "campaignStep": "confirmation",
+    "completed": true
+  }
+}

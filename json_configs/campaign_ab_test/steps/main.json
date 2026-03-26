@@ -1,0 +1,49 @@
+{
+  "sections": [
+    {
+      "component": "Hero",
+      "props": {
+        "title": "Welcome to Our Campaign",
+        "subtitle": "Discover how we can help you achieve your goals",
+        "ctaText": "Get Started",
+        "onCtaClick": [
+          {
+            "type": "navigation",
+            "payload": { "to": "form", "type": "step" }
+          }
+        ]
+      }
+    },
+    {
+      "component": "Features",
+      "props": {
+        "features": [
+          {
+            "icon": "⚡",
+            "title": "Fast Performance",
+            "description": "Lightning-fast load times optimized for conversion"
+          },
+          {
+            "icon": "🎯",
+            "title": "Targeted Experience",
+            "description": "Personalized content for maximum engagement"
+          },
+          {
+            "icon": "📊",
+            "title": "Data-Driven",
+            "description": "Every decision backed by real user insights"
+          }
+        ]
+      }
+    }
+  ],
+  "seo": {
+    "title": "Welcome - A/B Test Campaign",
+    "description": "Experience our optimized landing page",
+    "noindex": false
+  },
+  "state": {
+    "variant": "base",
+    "campaignStep": "main"
+  }
+}

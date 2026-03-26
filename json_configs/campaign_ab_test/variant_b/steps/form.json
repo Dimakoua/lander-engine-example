@@ -1,0 +1,28 @@
+{
+  "sections": [
+    {
+      "component": "Hero",
+      "props": {
+        "title": "Quick & Easy Sign Up",
+        "subtitle": "No credit card needed",
+        "ctaText": ""
+      }
+    },
+    {
+      "component": "UserDataForm",
+      "props": {}
+    },
+    {
+      "component": "StaticAlert",
+      "props": {
+        "type": "info",
+        "title": "Free Trial Ready",
+        "message": "Start with our free plan and upgrade whenever you're ready"
+      }
+    }
+  ],
+  "seo": {
+    "title": "Free Sign Up - Variant B | A/B Test Campaign",
+    "description": "Simple sign up with no credit card required"
+  }
+}
