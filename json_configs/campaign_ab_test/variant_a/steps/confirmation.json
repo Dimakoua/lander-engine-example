@@ -15,6 +15,10 @@
       }
     },
     {
+      "component": "UserDataDisplay",
+      "props": {}
+    },
+    {
       "component": "StaticCard",
       "props": {
         "title": "Your Premium Benefits Start Now",
