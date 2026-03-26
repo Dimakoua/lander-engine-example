@@ -1,0 +1,17 @@
+{
+  "name": "example-lander",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "lander dev",
+    "build": "lander build"
+  },
+  "dependencies": {
+    "@astrojs/react": "^3.1.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "lander-engine": "github:Dimakoua/lander-engine",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
