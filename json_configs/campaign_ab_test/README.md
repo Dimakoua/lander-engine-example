@@ -14,13 +14,6 @@ campaign_ab_test/
 │   ├── form.json              # Registration form template
 │   └── confirmation.json      # Success page template
 │
-├── mobile/                    # MOBILE DEVICE OVERRIDES (base mobile)
-│   ├── theme.json             # Compact spacing, smaller fonts
-│   └── steps/
-│       ├── main.json          # Mobile-optimized landing
-│       ├── form.json          # Condensed form layout
-│       └── confirmation.json  # Mobile success page
-│
 ├── variant_a/                 # VARIANT A: Premium Focus (Desktop)
 │   ├── theme.json             # Blue color scheme override
 │   ├── steps/
