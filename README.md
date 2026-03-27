@@ -52,6 +52,16 @@ npm run build
 
 Output is written to the `dist/` directory, ready for deployment to any static hosting service (Netlify, Vercel, GitHub Pages, etc.).
 
+### Preview Production Build
+
+After building, you can run a local preview server to verify the generated HTML/CSS/JS exactly as it will be deployed:
+
+```bash
+npm run preview
+```
+
+Then open `http://localhost:4321` (or the address shown in the terminal).
+
 ## Project Structure
 
 ```
