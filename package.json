@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "lander dev",
-    "build": "lander build"
+    "build": "lander build",
+    "preview": "lander preview"
   },
   "dependencies": {
     "@astrojs/react": "^3.1.0",
