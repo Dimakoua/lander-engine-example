@@ -24,6 +24,14 @@ export default {
     //   onAfterBuild: async (config) => {
     //     console.log('Static output written to:', config.outputDir);
     //   },
+    // Register additional components programmatically
+    //   registerComponents: () => ({
+    //     ThirdPartyWidget: () => import('./vendor/Widget'),
+    //   }),
+    // Register additional action handlers programmatically
+    //   registerActions: () => ({
+    //     sendToHubspot: async (payload) => { /* ... */ },
+    //   }),
     // },
   ],
 };
