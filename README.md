@@ -96,7 +96,14 @@ export default {
   jsonConfigsDir: 'json_configs',
   componentsDir: 'components',
   actionsDir: 'actions',
+  assetsDir: 'public/assets',
   outputDir: 'dist',
+  errorPages: {
+    "404": {
+      component: "Custom404",
+      props: { message: "Page Not Found" }
+    }
+  },
   plugins: []
 };
 ```
@@ -121,6 +128,72 @@ Create `.tsx` files in the `components/` directory. They are auto-registered and
 ### Adding Custom Actions
 
 Create action handlers in `actions/` to handle form submissions, analytics, or custom events defined in your JSON configs.
+
+### Static Assets Support
+
+You can set up a static assets directory in your project (e.g. `public/assets`) and reference it in your configuration via `assetsDir`. Images and other files placed inside will be served and bundled with the built static output.
+
+```javascript
+// lander.config.js
+export default {
+  assetsDir: 'public/assets',
+  // ...
+};
+```
+
+### Template Variable Interpolation
+
+You can define variables in `state.json` inside your campaign directory. The engine will interpolate these variables at build time wherever `{{ variableName }}` is found in your JSON configurations.
+
+```json
+// json_configs/campaign_alpha/state.json
+{
+  "companyName": "Acme Corp"
+}
+```
+
+```json
+// json_configs/campaign_alpha/layout.json
+{
+  "header": {
+    "component": "Hero",
+    "props": {
+      "title": "Welcome to {{ companyName }}!"
+    }
+  }
+}
+```
+
+### Flexible Base Path Routing
+
+The `routing.config.js` now allows flexible mapping per domain. You can map a host to a campaign and specify a custom `basePath`.
+
+```javascript
+// routing.config.js
+export default {
+  'example.com': { campaign: 'campaign_alpha', basePath: '/app' },
+  'promo.example.com': 'campaign_promo'
+};
+```
+
+### Custom Error Pages
+
+You can configure custom error pages (e.g. 404) directly in your `lander.config.js`. First, create an error page component (like `components/Custom404.tsx`), then register it:
+
+```javascript
+// lander.config.js
+export default {
+  errorPages: {
+    "404": {
+      component: "Custom404",
+      props: {
+        message: "The page you are looking for has been moved or does not exist."
+      }
+    }
+  }
+  // ...
+};
+```
 
 ## Updating Dependencies
 

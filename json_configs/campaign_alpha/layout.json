@@ -2,7 +2,7 @@
   "header": {
     "component": "Navbar",
     "props": {
-      "brandName": "SaaSify Demo",
+      "brandName": "SaaSify Demo for {{ companyName }}",
       "links": [
         {
           "label": "Home",
@@ -11,7 +11,9 @@
               "type": "ui",
               "payload": {
                 "operation": "goToNextStep",
-                "params": { "next": "main" }
+                "params": {
+                  "next": "main"
+                }
               }
             }
           ]
@@ -23,7 +25,9 @@
               "type": "ui",
               "payload": {
                 "operation": "goToNextStep",
-                "params": { "next": "actions-showcase" }
+                "params": {
+                  "next": "actions-showcase"
+                }
               }
             }
           ]
@@ -35,7 +39,9 @@
           "type": "ui",
           "payload": {
             "operation": "openPopup",
-            "params": { "popupId": "secondary" }
+            "params": {
+              "popupId": "secondary"
+            }
           }
         }
       ]
@@ -44,7 +50,7 @@
   "footer": {
     "component": "Footer",
     "props": {
-      "brandName": "SaaSify Demo",
+      "brandName": "Thank You from {{ companyName }}!",
       "description": "Building the future of configuration-driven landing pages.",
       "links": [
         {
@@ -54,7 +60,9 @@
               "type": "ui",
               "payload": {
                 "operation": "goToNextStep",
-                "params": { "next": "main" }
+                "params": {
+                  "next": "main"
+                }
               }
             }
           ]
@@ -66,7 +74,9 @@
               "type": "ui",
               "payload": {
                 "operation": "goToNextStep",
-                "params": { "next": "actions-showcase" }
+                "params": {
+                  "next": "actions-showcase"
+                }
               }
             }
           ]
