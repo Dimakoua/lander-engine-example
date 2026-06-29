@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { dispatcher, watchLoadingAction } from 'lander-engine/core';
+import InteractiveResponseViewer from './InteractiveResponseViewer';
 
 interface HeroProps {
   title: string;
@@ -80,15 +81,7 @@ export default function Hero({ title, subtitle, ctaText, onCtaClick }: HeroProps
           )}
 
           {Object.keys(values).length > 0 && (
-            <div className="mt-6 bg-white border border-gray-200 rounded-xl p-4 text-left">
-              <h4 className="font-semibold text-[var(--color-primary)] mb-2">State values after action</h4>
-              {Object.entries(values).map(([key, value]) => (
-                <div key={key} className="mb-2">
-                  <p className="text-sm text-gray-500">{key}</p>
-                  <pre className="text-xs bg-gray-50 border border-gray-100 rounded p-2 overflow-auto text-gray-800">{JSON.stringify(value, null, 2) || 'undefined'}</pre>
-                </div>
-              ))}
-            </div>
+            <InteractiveResponseViewer data={values} />
           )}
 
           {copied && (
