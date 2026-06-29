@@ -14,6 +14,18 @@ export default {
   // Static output directory produced by `lander build` (default: 'dist')
   outputDir: 'dist',
 
+  // Directory for static assets like images, fonts, etc.
+  assetsDir: 'public/assets',
+
+  errorPages: {
+    "404": {
+      component: "Custom404",
+      props: {
+        message: "The page you are looking for has been moved or does not exist."
+      }
+    }
+  },
+
   plugins: [
     // Example plugin — uncomment to enable
     // {

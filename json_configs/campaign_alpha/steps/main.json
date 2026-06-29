@@ -1,6 +1,14 @@
 {
   "sections": [
     {
+      "component": "Image",
+      "props": {
+        "src": "assets/logo.png",
+        "alt": "Lander Engine Logo",
+        "width": "200"
+      }
+    },
+    {
       "component": "Hero",
       "props": {
         "title": "Separated Project Example",

@@ -2,14 +2,14 @@
   "header": {
     "component": "Hero",
     "props": {
-      "title": "🚀 Lander Engine Demo",
+      "title": "🚀 Lander Engine Demo for {{ companyName }}",
       "subtitle": "The most flexible campaign builder"
     }
   },
   "footer": {
     "component": "Hero",
     "props": {
-      "title": "Thank You!",
+      "title": "Thank You from {{ companyName }}!",
       "subtitle": "Built with Lander Engine"
     }
   }
