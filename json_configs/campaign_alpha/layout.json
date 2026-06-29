@@ -1,16 +1,87 @@
 {
   "header": {
-    "component": "Hero",
+    "component": "Navbar",
     "props": {
-      "title": "🚀 Lander Engine Demo for {{ companyName }}",
-      "subtitle": "The most flexible campaign builder"
+      "brandName": "SaaSify Demo for {{ companyName }}",
+      "links": [
+        {
+          "label": "Home",
+          "action": [
+            {
+              "type": "ui",
+              "payload": {
+                "operation": "goToNextStep",
+                "params": {
+                  "next": "main"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "label": "Showcase",
+          "action": [
+            {
+              "type": "ui",
+              "payload": {
+                "operation": "goToNextStep",
+                "params": {
+                  "next": "actions-showcase"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "ctaText": "Contact Us",
+      "onCtaClick": [
+        {
+          "type": "ui",
+          "payload": {
+            "operation": "openPopup",
+            "params": {
+              "popupId": "secondary"
+            }
+          }
+        }
+      ]
     }
   },
   "footer": {
-    "component": "Hero",
+    "component": "Footer",
     "props": {
-      "title": "Thank You from {{ companyName }}!",
-      "subtitle": "Built with Lander Engine"
+      "brandName": "Thank You from {{ companyName }}!",
+      "description": "Building the future of configuration-driven landing pages.",
+      "links": [
+        {
+          "label": "Main Page",
+          "action": [
+            {
+              "type": "ui",
+              "payload": {
+                "operation": "goToNextStep",
+                "params": {
+                  "next": "main"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "label": "Showcase",
+          "action": [
+            {
+              "type": "ui",
+              "payload": {
+                "operation": "goToNextStep",
+                "params": {
+                  "next": "actions-showcase"
+                }
+              }
+            }
+          ]
+        }
+      ]
     }
   }
 }

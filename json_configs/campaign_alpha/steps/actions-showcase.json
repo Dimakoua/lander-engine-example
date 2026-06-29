@@ -11,7 +11,9 @@
             "type": "ui",
             "payload": {
               "operation": "goToNextStep",
-              "params": { "next": "main" }
+              "params": {
+                "next": "main"
+              }
             }
           }
         ]
@@ -60,17 +62,19 @@
       }
     },
     {
-      "component": "Hero",
+      "component": "CTASection",
       "props": {
         "title": "Try Action Examples",
         "subtitle": "Below are buttons that trigger different action types",
-        "ctaText": "📋 Copy to Clipboard",
-        "onCtaClick": [
+        "primaryCtaText": "📋 Copy to Clipboard",
+        "onPrimaryCtaClick": [
           {
             "type": "ui",
             "payload": {
               "operation": "copyToClipboard",
-              "params": { "text": "Hello from Lander Engine! This text was copied using the copyToClipboard action." }
+              "params": {
+                "text": "Hello from Lander Engine! This text was copied using the copyToClipboard action."
+              }
             }
           }
         ]
@@ -81,12 +85,12 @@
       "props": {}
     },
     {
-      "component": "Hero",
+      "component": "CTASection",
       "props": {
         "title": "Sequence Action Example",
         "subtitle": "Multiple actions can run together as a sequence",
-        "ctaText": "⬆️ Scroll to Top & Copy",
-        "onCtaClick": [
+        "primaryCtaText": "⬆️ Scroll to Top & Copy",
+        "onPrimaryCtaClick": [
           {
             "type": "sequence",
             "payload": {
@@ -95,14 +99,19 @@
                   "type": "ui",
                   "payload": {
                     "operation": "scrollTo",
-                    "params": { "top": 0, "behavior": "smooth" }
+                    "params": {
+                      "top": 0,
+                      "behavior": "smooth"
+                    }
                   }
                 },
                 {
                   "type": "ui",
                   "payload": {
                     "operation": "copyToClipboard",
-                    "params": { "text": "Scrolled to top and copied this message!" }
+                    "params": {
+                      "text": "Scrolled to top and copied this message!"
+                    }
                   }
                 }
               ]
@@ -134,12 +143,12 @@
       }
     },
     {
-      "component": "Hero",
+      "component": "CTASection",
       "props": {
         "title": "REST API Actions",
         "subtitle": "HTTP requests with success/error handling",
-        "ctaText": "🔄 GET Example",
-        "onCtaClick": [
+        "primaryCtaText": "🔄 GET Example",
+        "onPrimaryCtaClick": [
           {
             "type": "rest",
             "payload": {
@@ -151,7 +160,9 @@
                   "type": "ui",
                   "payload": {
                     "operation": "copyToClipboard",
-                    "params": { "text": "GET request successful! Check the state for the fetched post data." }
+                    "params": {
+                      "text": "GET request successful! Check the state for the fetched post data."
+                    }
                   }
                 }
               ],
@@ -160,7 +171,9 @@
                   "type": "ui",
                   "payload": {
                     "operation": "copyToClipboard",
-                    "params": { "text": "GET request failed. Check network and try again." }
+                    "params": {
+                      "text": "GET request failed. Check network and try again."
+                    }
                   }
                 }
               ]
@@ -170,12 +183,12 @@
       }
     },
     {
-      "component": "Hero",
+      "component": "CTASection",
       "props": {
         "title": "Create Data with POST",
         "subtitle": "Send data to create a new resource",
-        "ctaText": "📤 POST Example",
-        "onCtaClick": [
+        "primaryCtaText": "📤 POST Example",
+        "onPrimaryCtaClick": [
           {
             "type": "rest",
             "payload": {
@@ -195,7 +208,9 @@
                   "type": "ui",
                   "payload": {
                     "operation": "copyToClipboard",
-                    "params": { "text": "POST request successful! New resource created." }
+                    "params": {
+                      "text": "POST request successful! New resource created."
+                    }
                   }
                 }
               ],
@@ -204,7 +219,9 @@
                   "type": "ui",
                   "payload": {
                     "operation": "copyToClipboard",
-                    "params": { "text": "POST request failed." }
+                    "params": {
+                      "text": "POST request failed."
+                    }
                   }
                 }
               ]
@@ -214,12 +231,12 @@
       }
     },
     {
-      "component": "Hero",
+      "component": "CTASection",
       "props": {
         "title": "Update Data with PUT",
         "subtitle": "Modify an existing resource",
-        "ctaText": "✏️ PUT Example",
-        "onCtaClick": [
+        "primaryCtaText": "✏️ PUT Example",
+        "onPrimaryCtaClick": [
           {
             "type": "rest",
             "payload": {
@@ -240,7 +257,9 @@
                   "type": "ui",
                   "payload": {
                     "operation": "copyToClipboard",
-                    "params": { "text": "PUT request successful! Resource updated." }
+                    "params": {
+                      "text": "PUT request successful! Resource updated."
+                    }
                   }
                 }
               ],
@@ -249,7 +268,9 @@
                   "type": "ui",
                   "payload": {
                     "operation": "copyToClipboard",
-                    "params": { "text": "PUT request failed." }
+                    "params": {
+                      "text": "PUT request failed."
+                    }
                   }
                 }
               ]
@@ -259,12 +280,12 @@
       }
     },
     {
-      "component": "Hero",
+      "component": "CTASection",
       "props": {
         "title": "Delete Data with DELETE",
         "subtitle": "Remove a resource",
-        "ctaText": "🗑️ DELETE Example",
-        "onCtaClick": [
+        "primaryCtaText": "🗑️ DELETE Example",
+        "onPrimaryCtaClick": [
           {
             "type": "rest",
             "payload": {
@@ -276,7 +297,9 @@
                   "type": "ui",
                   "payload": {
                     "operation": "copyToClipboard",
-                    "params": { "text": "DELETE request successful! Resource deleted." }
+                    "params": {
+                      "text": "DELETE request successful! Resource deleted."
+                    }
                   }
                 }
               ],
@@ -285,7 +308,9 @@
                   "type": "ui",
                   "payload": {
                     "operation": "copyToClipboard",
-                    "params": { "text": "DELETE request failed." }
+                    "params": {
+                      "text": "DELETE request failed."
+                    }
                   }
                 }
               ]
@@ -295,12 +320,12 @@
       }
     },
     {
-      "component": "Hero",
+      "component": "CTASection",
       "props": {
         "title": "REST with Error Handling",
         "subtitle": "Request that intentionally fails to show error handling",
-        "ctaText": "❌ Error Example",
-        "onCtaClick": [
+        "primaryCtaText": "❌ Error Example",
+        "onPrimaryCtaClick": [
           {
             "type": "rest",
             "payload": {
@@ -312,7 +337,9 @@
                   "type": "ui",
                   "payload": {
                     "operation": "copyToClipboard",
-                    "params": { "text": "Request succeeded (unexpected)!" }
+                    "params": {
+                      "text": "Request succeeded (unexpected)!"
+                    }
                   }
                 }
               ],
@@ -321,7 +348,9 @@
                   "type": "ui",
                   "payload": {
                     "operation": "copyToClipboard",
-                    "params": { "text": "Error handled gracefully! onError handler executed." }
+                    "params": {
+                      "text": "Error handled gracefully! onError handler executed."
+                    }
                   }
                 }
               ]
@@ -331,12 +360,12 @@
       }
     },
     {
-      "component": "Hero",
+      "component": "CTASection",
       "props": {
         "title": "REST Action Patterns",
         "subtitle": "Common REST patterns combined with other actions",
-        "ctaText": "⛓️ REST + Sequence Example",
-        "onCtaClick": [
+        "primaryCtaText": "⛓️ REST + Sequence Example",
+        "onPrimaryCtaClick": [
           {
             "type": "sequence",
             "payload": {
@@ -354,7 +383,9 @@
                   "type": "ui",
                   "payload": {
                     "operation": "copyToClipboard",
-                    "params": { "text": "Fetched user data and completed sequence!" }
+                    "params": {
+                      "text": "Fetched user data and completed sequence!"
+                    }
                   }
                 }
               ]
@@ -364,12 +395,12 @@
       }
     },
     {
-      "component": "Hero",
+      "component": "CTASection",
       "props": {
         "title": "Loading State Demo",
         "subtitle": "REST actions automatically manage loading state. Check state for: loading_userData",
-        "ctaText": "📡 Trigger Loading State",
-        "onCtaClick": [
+        "primaryCtaText": "📡 Trigger Loading State",
+        "onPrimaryCtaClick": [
           {
             "type": "sequence",
             "payload": {
@@ -393,7 +424,9 @@
                         "type": "ui",
                         "payload": {
                           "operation": "copyToClipboard",
-                          "params": { "text": "✅ User data loaded! State keys: userData (response), userLoading (false)" }
+                          "params": {
+                            "text": "✅ User data loaded! State keys: userData (response), userLoading (false)"
+                          }
                         }
                       }
                     ]
@@ -406,56 +439,69 @@
       }
     },
     {
-      "component": "Hero",
+      "component": "CTASection",
       "props": {
         "title": "Custom Action: logEvent",
         "subtitle": "actions/analytics.ts exports logEvent and identify — registered automatically from the actions/ directory",
-        "ctaText": "📊 Fire logEvent",
-        "onCtaClick": [
+        "primaryCtaText": "📊 Fire logEvent",
+        "onPrimaryCtaClick": [
           {
             "type": "logEvent",
             "payload": {
               "event": "cta_clicked",
-              "properties": { "step": "actions-showcase", "label": "Fire logEvent" }
+              "properties": {
+                "step": "actions-showcase",
+                "label": "Fire logEvent"
+              }
             }
           },
           {
             "type": "ui",
             "payload": {
               "operation": "copyToClipboard",
-              "params": { "text": "logEvent fired! Open browser DevTools console to see the output." }
+              "params": {
+                "text": "logEvent fired! Open browser DevTools console to see the output."
+              }
             }
           }
         ]
       }
     },
     {
-      "component": "Hero",
+      "component": "CTASection",
       "props": {
         "title": "Custom Action: identify",
         "subtitle": "Identify a user with an ID and traits — dispatched via sequence alongside built-in setState",
-        "ctaText": "👤 Fire identify",
-        "onCtaClick": [
+        "primaryCtaText": "👤 Fire identify",
+        "onPrimaryCtaClick": [
           {
             "type": "sequence",
             "payload": {
               "actions": [
                 {
                   "type": "setState",
-                  "payload": { "key": "userId", "value": "usr_demo_001" }
+                  "payload": {
+                    "key": "userId",
+                    "value": "usr_demo_001"
+                  }
                 },
                 {
                   "type": "identify",
                   "payload": {
                     "userId": "usr_demo_001",
-                    "traits": { "plan": "pro", "source": "lander-engine-demo" }
+                    "traits": {
+                      "plan": "pro",
+                      "source": "lander-engine-demo"
+                    }
                   }
                 },
                 {
                   "type": "ui",
                   "payload": {
                     "operation": "copyToClipboard",
-                    "params": { "text": "identify fired! Check DevTools console and state for userId." }
+                    "params": {
+                      "text": "identify fired! Check DevTools console and state for userId."
+                    }
                   }
                 }
               ]
@@ -465,17 +511,19 @@
       }
     },
     {
-      "component": "Hero",
+      "component": "CTASection",
       "props": {
         "title": "Ready to Build?",
         "subtitle": "Use these actions to create powerful, data-driven campaigns",
-        "ctaText": "📧 View Contact Popup",
-        "onCtaClick": [
+        "primaryCtaText": "📧 View Contact Popup",
+        "onPrimaryCtaClick": [
           {
             "type": "ui",
             "payload": {
               "operation": "openPopup",
-              "params": { "popupId": "secondary" }
+              "params": {
+                "popupId": "secondary"
+              }
             }
           }
         ]

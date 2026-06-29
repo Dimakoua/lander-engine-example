@@ -3,9 +3,9 @@
     {
       "component": "Hero",
       "props": {
-        "title": "Mobile First",
-        "subtitle": "Optimized for smaller screens",
-        "ctaText": "📧 Contact",
+        "title": "Scale Your Business with SaaSify",
+        "subtitle": "The ultimate platform for automating your workflow, managing your teams, and accelerating your growth. Try it today risk-free.",
+        "ctaText": "Start Your Free Trial",
         "onCtaClick": [
           {
             "type": "ui",
@@ -18,49 +18,148 @@
       }
     },
     {
-      "component": "Features",
+      "component": "FeaturesGrid",
       "props": {
+        "title": "Everything you need to succeed",
+        "subtitle": "We've built a comprehensive suite of tools designed to help your team perform at its best.",
         "features": [
           {
-            "icon": "📱",
-            "title": "Mobile Responsive",
-            "description": "Perfectly sized for phones"
-          },
-          {
             "icon": "⚡",
-            "title": "Fast Loading",
-            "description": "Optimized performance"
+            "title": "Lightning Fast",
+            "description": "Our global edge network ensures your data is delivered with millisecond latency, anywhere in the world."
           },
           {
-            "icon": "🎨",
-            "title": "Clean Design",
-            "description": "Minimal, focused layout"
+            "icon": "🔒",
+            "title": "Bank-Grade Security",
+            "description": "Your data is encrypted at rest and in transit. We comply with SOC2, GDPR, and HIPAA standards."
+          },
+          {
+            "icon": "🔄",
+            "title": "Automated Workflows",
+            "description": "Connect your favorite tools and let SaaSify handle the repetitive tasks so you can focus on what matters."
+          },
+          {
+            "icon": "📊",
+            "title": "Real-time Analytics",
+            "description": "Make data-driven decisions with our powerful dashboard and customizable reporting tools."
+          },
+          {
+            "icon": "👥",
+            "title": "Team Collaboration",
+            "description": "Built-in chat, file sharing, and task assignment features keep everyone on the same page."
+          },
+          {
+            "icon": "🔌",
+            "title": "Extensive API",
+            "description": "Integrate SaaSify into your existing stack with our well-documented, RESTful API."
           }
         ]
       }
     },
     {
-      "component": "UserDataForm",
-      "props": {}
+      "component": "Testimonials",
+      "props": {
+        "testimonials": [
+          {
+            "quote": "SaaSify completely transformed how our engineering team operates. We're deploying 3x faster.",
+            "author": "Elena Rodriguez",
+            "role": "CTO, TechFlow"
+          },
+          {
+            "quote": "The analytics dashboard gave us insights we never knew we needed. Absolutely indispensable tool.",
+            "author": "David Chen",
+            "role": "Head of Growth, StartupX"
+          },
+          {
+            "quote": "Best customer support I've ever experienced. The product is rock solid and incredibly intuitive.",
+            "author": "Sarah Jenkins",
+            "role": "Operations Manager, Globex"
+          }
+        ]
+      }
     },
     {
-      "component": "Counter",
-      "props": {}
+      "component": "PricingTable",
+      "props": {
+        "title": "Simple, transparent pricing",
+        "subtitle": "Choose the plan that fits your team's needs.",
+        "tiers": [
+          {
+            "name": "Starter",
+            "price": "$29",
+            "description": "Perfect for individuals and small teams.",
+            "features": [
+              { "name": "Up to 5 Users", "included": true },
+              { "name": "Basic Analytics", "included": true },
+              { "name": "Community Support", "included": true },
+              { "name": "Custom Integrations", "included": false },
+              { "name": "Dedicated Account Manager", "included": false }
+            ],
+            "ctaText": "Get Started",
+            "onCtaClick": [
+              {
+                "type": "ui",
+                "payload": {
+                  "operation": "openPopup",
+                  "params": { "popupId": "secondary" }
+                }
+              }
+            ]
+          },
+          {
+            "name": "Professional",
+            "price": "$99",
+            "description": "Ideal for growing businesses.",
+            "isPopular": true,
+            "features": [
+              { "name": "Up to 20 Users", "included": true },
+              { "name": "Advanced Analytics", "included": true },
+              { "name": "Priority 24/7 Support", "included": true },
+              { "name": "Custom Integrations", "included": true },
+              { "name": "Dedicated Account Manager", "included": false }
+            ],
+            "ctaText": "Start Free Trial",
+            "onCtaClick": [
+              {
+                "type": "ui",
+                "payload": {
+                  "operation": "openPopup",
+                  "params": { "popupId": "secondary" }
+                }
+              }
+            ]
+          },
+          {
+            "name": "Enterprise",
+            "price": "$299",
+            "description": "For large scale organizations.",
+            "features": [
+              { "name": "Unlimited Users", "included": true },
+              { "name": "Custom Analytics", "included": true },
+              { "name": "SLA Guarantee", "included": true },
+              { "name": "Custom Integrations", "included": true },
+              { "name": "Dedicated Account Manager", "included": true }
+            ],
+            "ctaText": "Contact Sales",
+            "onCtaClick": [
+              {
+                "type": "ui",
+                "payload": {
+                  "operation": "openPopup",
+                  "params": { "popupId": "secondary" }
+                }
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "component": "StaticHeader",
       "props": {
-        "title": "📚 Astro Static Examples",
-        "subtitle": "Pure HTML - Zero JavaScript",
+        "title": "📚 Built with Static Components",
+        "subtitle": "Fast, accessible, and zero-JS interactive elements",
         "align": "center"
-      }
-    },
-    {
-      "component": "StaticAlert",
-      "props": {
-        "type": "success",
-        "title": "Native Astro",
-        "message": "True zero-JS components with native Astro format"
       }
     },
     {
@@ -68,24 +167,38 @@
       "props": {
         "icon": "⚡",
         "title": "Lightning Fast",
-        "description": "Instant render times"
+        "description": "Static components load instantly without any hydration overhead",
+        "backgroundColor": "#f0f4ff",
+        "borderColor": "#3b82f6"
       }
     },
     {
-      "component": "StaticAlert",
+      "component": "StaticCard",
       "props": {
-        "type": "info",
-        "title": "Astro Components",
-        "message": "Use .astro format for true static rendering"
+        "icon": "🔒",
+        "title": "Type Safe",
+        "description": "Full TypeScript support with perfect IDE autocomplete",
+        "backgroundColor": "#f0fdf4",
+        "borderColor": "#10b981"
       }
     },
     {
-      "component": "Hero",
+      "component": "CTASection",
       "props": {
-        "title": "Explore More",
-        "subtitle": "View all features",
-        "ctaText": "Next →",
-        "onCtaClick": [
+        "title": "Ready to transform your business?",
+        "subtitle": "Join thousands of satisfied customers and start your 14-day free trial today. No credit card required.",
+        "primaryCtaText": "Start Free Trial",
+        "onPrimaryCtaClick": [
+          {
+            "type": "ui",
+            "payload": {
+              "operation": "openPopup",
+              "params": { "popupId": "secondary" }
+            }
+          }
+        ],
+        "secondaryCtaText": "Explore Features",
+        "onSecondaryCtaClick": [
           {
             "type": "ui",
             "payload": {
@@ -98,6 +211,7 @@
     }
   ],
   "seo": {
-    "title": "Mobile | Lander Engine"
+    "title": "SaaSify - Grow Your Business",
+    "description": "The ultimate platform for automating workflows and managing teams."
   }
 }

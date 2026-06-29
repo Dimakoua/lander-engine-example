@@ -1,16 +1,27 @@
 {
   "header": {
-    "component": "Hero",
+    "component": "Navbar",
     "props": {
-      "title": "📱 Mobile Demo",
-      "subtitle": "Optimized for mobile devices"
+      "brandName": "SaaSify Mobile",
+      "links": [],
+      "ctaText": "Menu",
+      "onCtaClick": [
+        {
+          "type": "ui",
+          "payload": {
+            "operation": "openPopup",
+            "params": { "popupId": "secondary" }
+          }
+        }
+      ]
     }
   },
   "footer": {
-    "component": "Hero",
+    "component": "Footer",
     "props": {
-      "title": "Thanks!",
-      "subtitle": "Lander Engine"
+      "brandName": "SaaSify Mobile",
+      "description": "Optimized for mobile devices.",
+      "links": []
     }
   }
 }
