@@ -3,7 +3,7 @@
     {
       "component": "Image",
       "props": {
-        "src": "assets/logo.png",
+        "src": "/assets/logo.png",
         "alt": "Lander Engine Logo",
         "width": "200"
       }
