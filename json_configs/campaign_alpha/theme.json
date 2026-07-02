@@ -5,6 +5,13 @@
     "background": "#ffffff",
     "text": "#0b0c10"
   },
+  "fonts": {
+    "body": "'Outfit', sans-serif",
+    "heading": "'Outfit', sans-serif"
+  },
+  "fontSources": [
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+  ],
   "tokens": {
     "buttonRadius": "12px"
   }
