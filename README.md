@@ -166,13 +166,13 @@ You can define variables in `state.json` inside your campaign directory. The eng
 
 ### Flexible Base Path Routing
 
-The `routing.config.js` now allows flexible mapping per domain. You can map a host to a campaign and specify a custom `basePath`.
+The `routing.config.js` now allows flexible mapping per domain. 
 
 ```javascript
 // routing.config.js
 export default {
-  'example.com': { campaign: 'campaign_alpha', basePath: '/app' },
-  'promo.example.com': 'campaign_promo'
+  'example.com': { campaign: 'campaign_alpha', renderFromRoot: true },
+  'localhost': 'campaign_alpha',
 };
 ```
 

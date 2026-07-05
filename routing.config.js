@@ -18,6 +18,6 @@ export default {
   //   'promo.example.com': 'campaign_alpha',
   //   'sale.example.com':  'campaign_beta',
 
-  'example.com': { campaign: 'campaign_alpha', basePath: '/app' },
-  'localhost': 'campaign_alpha',
+  'example.com': 'campaign_alpha',
+  'localhost': { campaign: 'campaign_alpha', renderFromRoot: true },
 };
